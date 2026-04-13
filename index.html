@@ -20,7 +20,16 @@
     <div class="page-shell">
       <header class="site-header">
         <a class="brand" href="./">Tom Loughlin</a>
-        <nav class="main-nav" aria-label="Main">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="sr-only">Menu</span>
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+        <nav id="site-nav" class="main-nav" aria-label="Main">
           <a href="#work">Work</a>
           <a href="#leadership">Leadership</a>
           <a href="#contact">Contact</a>
@@ -168,5 +177,6 @@
         </section>
       </main>
     </div>
+    <script src="main.js" defer></script>
   </body>
 </html>
